@@ -120,7 +120,7 @@ function Main({ mode }: MainProps) {
           A total of 8 slots are available for contributed talks and will be selected by the scientific committee. In case of a larger number of requests, submissions exceeding the available slots will be redirected to the poster session.
         </p>
         <p>
-          The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano (PoliMi), Scuola Internazionale Superiore degli Studi (SISSA), Università di Genova (UniGe), Università di Pavia - IMATI (UniPV-IMATI)</strong>, and <strong>Università di Pisa - Scuola Normale Superiore (UniPi-SNS)</strong>. This event is partly funded by <strong>GNCS-INdAM</strong> and held under the patronage of the <strong>Società Italiana di Matematica Applicata e Industriale</strong> (SIMAI).
+          The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano (PoliMi), Scuola Internazionale Superiore degli Studi Avanzati (SISSA), Università di Genova (UniGe), Università di Pavia - IMATI (UniPV-IMATI)</strong>, and <strong>Università di Pisa - Scuola Normale Superiore (UniPi-SNS)</strong>. This event is partly funded by <strong>GNCS-INdAM</strong> and held under the patronage of the <strong>Società Italiana di Matematica Applicata e Industriale</strong> (SIMAI).
         </p>
         <p>
           Submissions and participation are warmly encouraged from researchers across <strong>all Italian universities and research centres</strong>.
