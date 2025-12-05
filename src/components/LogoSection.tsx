@@ -17,7 +17,7 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
         <a href="https://www.polimi.it/"><img src="./logos/logo_polimi.png" alt="Politecnico di Milano" /></a>
       </div>
       <div className="patrocinio">
-        <a href="https://mox.polimi.it/"><img src="./logos/logo_grande_mox.pdf" alt="MOX Politecnico di Milano" /></a>
+        <a href="https://mox.polimi.it/"><img src="./logos/logo_grande_mox.png" alt="MOX Politecnico di Milano" /></a>
       </div>
       <div className="patrocinio">
         <a href="https://www.siam.org/"><img src="./logos/SIAM.png" alt="SIAM" /></a>
@@ -36,35 +36,35 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
           className="logo-loop"
           logos={[
             {
-              src: "./logos/logo_mathLab_bg_v.png",
-              alt: "mathLab",
-              href: "https://mathlab.sissa.it/"
-            },
-            {
               src: "./logos/logo-8192px.png",
               alt: "AIM",
               href: "https://www.aim-mate.it/"
             },
             {
-              src: "./logos/matematica_unipi_dx_blu.png",
-              alt: "Università di Pisa",
-              href: "https://www.unipi.it/"
-            },
-            {
-              src: "./logos/SNS.png",
-              alt: "Scuola Normale Superiore",
-              href: "https://www.sns.it/"
+              src: "./logos/siamgenova.png",
+              alt: "GENOVA",
+              href: "https://dima.unige.it/"
             },
             {
               src: "./logos/pavia.png",
-              alt: "Università di Pavia",
-              href: "https://www.unipv.it/"
+              alt: "PAVIA",
+              href: "https://sites.google.com/view/siam-unipv/home"
             },
             {
-              src: "./logos/siamgenova.png",
-              alt: "SIAM Genova",
-              href: "https://www.dima.unige.it/"
-            }
+              src: "./logos/pisa.png",
+              alt: "PISA",
+              href: "https://pysanum.dm.unipi.it/"
+            },
+            {
+              src: "./logos/polimi.jpg",
+              alt: "POLIMI",
+              href: "https://www.aim-mate.it/about-us/siam"
+            },
+            {
+              src: "./logos/sissa.jpg",
+              alt: "SISSA",
+              href: "https://www.math.sissa.it/content/sissa-siam-student-chapter"
+            },
           ]}
           speed={80}
           direction="left"
