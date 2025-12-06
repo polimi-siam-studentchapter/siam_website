@@ -120,7 +120,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         affiliation: "MOX, DMAT, Politecnico di Milano",
       },
     ],
-    "SIAM Chapter Representatives": [
+    "Representatives of other SIAM Chapters": [
       {
         name: "Luca Calatroni",
         img: "./speakers/calatroni.jpeg",

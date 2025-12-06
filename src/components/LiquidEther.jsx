@@ -5,7 +5,7 @@ import "./LiquidEther.css";
 export default function LiquidEther({
   mouseForce = 20,
   cursorSize = 100,
-  isViscous = false,
+  isViscous = true,
   viscous = 30,
   iterationsViscous = 32,
   iterationsPoisson = 32,
@@ -17,9 +17,9 @@ export default function LiquidEther({
   style = {},
   className = "",
   autoDemo = true,
-  autoSpeed = 0.5,
+  autoSpeed = 1.5,
   autoIntensity = 2.2,
-  takeoverDuration = 0.25,
+  takeoverDuration = 2.25,
   autoResumeDelay = 1000,
   autoRampDuration = 0.6,
 }) {
