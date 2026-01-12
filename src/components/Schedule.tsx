@@ -34,43 +34,174 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       setExpanded(isExpanded ? panel : false);
 
   const day1: Session[] = [
-    { time: "8:30-9:00", programme: "Opening", speaker: "-" },
-    { time: "9:00-9:40", programme: "Keynote 1", speaker: "[SENIOR 1]" },
-    { time: "9:40-11:00", programme: "Session 1", speaker: "[JUNIOR 1A]" },
-    { time: "", programme: "", speaker: "[JUNIOR 1B]" },
-    { time: "", programme: "", speaker: "[JUNIOR 1C]" },
-    { time: "", programme: "", speaker: "[JUNIOR 1D]" },
-    { time: "11:00-11:30", programme: "Coffee", speaker: "-" },
-    { time: "11:30-13:10", programme: "Session 2", speaker: "[JUNIOR 2A]" },
-    { time: "", programme: "", speaker: "[JUNIOR 2B]" },
-    { time: "", programme: "", speaker: "[JUNIOR 2C]" },
-    { time: "", programme: "", speaker: "[JUNIOR 2D]" },
-    { time: "", programme: "", speaker: "[JUNIOR 2E]" },
+    { time: "8:30-9:00", programme: "Opening + Registration", speaker: "-" },
+
+    {
+      time: "9:00-9:40",
+      programme: "Keynote Lecture",
+      speaker: "Regazzoni",
+    },
+
+    {
+      time: "9:40-11:20",
+      programme: "Models and Methods",
+      speaker: "Cusumano",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "for Healthcare Applications",
+      speaker: "Dalmaso",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Fiori",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Leimer Saglio",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Trombini",
+    },
+
+    { time: "11:20-11:50", programme: "Coffee Break", speaker: "-" },
+
+    {
+      time: "11:50-12:30",
+      programme: "Keynote Lecture",
+      speaker: "Montardini",
+    },
+
+    {
+      time: "12:30-13:10",
+      programme: "Contributed Talks",
+      speaker: "Gonnella",
+    },
+    {
+      time: "12:30-13:10",
+      programme: "",
+      speaker: "Tarantino",
+    },
+
     { time: "13:10-14:30", programme: "Lunch", speaker: "-" },
-    { time: "14:30-15:10", programme: "Keynote 2", speaker: "[SENIOR 2]" },
-    { time: "15:10-16:30", programme: "Elevator Pitch", speaker: "-" },
-    { time: "16:30-18:00", programme: "Poster + Aperitif", speaker: "-" },
+
+    {
+      time: "14:30-15:50",
+      programme: "Contributed Talks",
+      speaker: "Accogli",
+    },
+    {
+      time: "14:30-15:50",
+      programme: "",
+      speaker: "Belardo",
+    },
+    {
+      time: "14:30-15:50",
+      programme: "",
+      speaker: "Lonati",
+    },
+    {
+      time: "14:30-15:50",
+      programme: "",
+      speaker: "Monforte",
+    },
+
+    { time: "16:00-17:00", programme: "Elevator Pitch", speaker: "-" },
+
+    { time: "17:00-18:30", programme: "Poster Session + Aperitif", speaker: "-" },
   ];
 
   const day2: Session[] = [
     { time: "8:30-9:00", programme: "Opening + Registration", speaker: "-" },
-    { time: "9:00-9:40", programme: "Keynote 3", speaker: "[SENIOR 3]" },
-    { time: "9:40-11:00", programme: "Session 3 (Tema 3)", speaker: "[JUNIOR 3A]" },
-    { time: "", programme: "", speaker: "[JUNIOR 3B]" },
-    { time: "", programme: "", speaker: "[JUNIOR 3C]" },
-    { time: "", programme: "", speaker: "[JUNIOR 3D]" },
-    { time: "11:00-11:30", programme: "Coffee", speaker: "-" },
-    { time: "11:30-12:50", programme: "Session 4 (Tema 4)", speaker: "[JUNIOR 4A]" },
-    { time: "", programme: "", speaker: "[JUNIOR 4B]" },
-    { time: "", programme: "", speaker: "[JUNIOR 4C]" },
-    { time: "", programme: "", speaker: "[JUNIOR 4D]" },
-    { time: "", programme: "", speaker: "[JUNIOR 4E]" },
+
+    {
+      time: "9:00-9:40",
+      programme: "Keynote Lecture",
+      speaker: "Calatroni",
+    },
+
+    {
+      time: "9:40-11:20",
+      programme: "Advances in Scientific Machine Learning",
+      speaker: "Daniele",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Palummo",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Tomada",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Tomasetto",
+    },
+    {
+      time: "9:40-11:20",
+      programme: "",
+      speaker: "Valentino",
+    },
+
+    { time: "11:20-11:50", programme: "Coffee Break", speaker: "-" },
+
+    {
+      time: "11:50-12:30",
+      programme: "Keynote Lecture",
+      speaker: "Torlo",
+    },
+
+    {
+      time: "12:30-13:10",
+      programme: "Contributed Talks",
+      speaker: "Labarrière",
+    },
+    {
+      time: "12:30-13:10",
+      programme: "",
+      speaker: "Scarlato",
+    },
+
     { time: "13:10-14:30", programme: "Lunch", speaker: "-" },
-    { time: "14:30-15:10", programme: "Keynote 4", speaker: "[SENIOR 4]" },
-    { time: "15:10-15:50", programme: "SIAM Chapters", speaker: "-" },
-    { time: "15:50-16:30", programme: "Keynote 5", speaker: "[SENIOR 5]" },
-    { time: "16:30-17:00", programme: "Closing", speaker: "-" },
+
+    {
+      time: "14:30-15:30",
+      programme: "Contributed Talks",
+      speaker: "Loffredo Senesi",
+    },
+    {
+      time: "14:30-15:30",
+      programme: "",
+      speaker: "Mugnaioni",
+    },
+    {
+      time: "14:30-15:30",
+      programme: "",
+      speaker: "Speroni",
+    },
+
+    {
+      time: "15:30-16:00",
+      programme: "SIAM + Institutional Session",
+      speaker: "-",
+    },
+
+    {
+      time: "16:00-16:40",
+      programme: "Keynote Lecture",
+      speaker: "Pagliantini",
+    },
+
+    { time: "16:40-16:50", programme: "Closing", speaker: "-" },
   ];
+
 
   return (
     <div className="schedule-section" id="schedule">
@@ -142,14 +273,14 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
         </Accordion>
       </Paper>
 
-      <a
+      {/* <a
         href="./downloadables/programma.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="download-button"
       >
         Download Schedule (PDF)
-      </a>
+      </a> */}
     </div>
   );
 };

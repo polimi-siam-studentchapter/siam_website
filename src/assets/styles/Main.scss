@@ -377,21 +377,24 @@
 }
 
 // ---------------------- Speakers ----------------------
+.contributed {
+  align-items: left;
+  text-align: left;
+  padding: 4em $margin-right-body 4em $margin-left-body;
+  width: $body-width;
+  align-items: left;
+  justify-content: flex-start;
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
 .speakers-section {
   padding: 4em 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
-
-  .contributed {
-    align-items: left;
-    text-align: left;
-    padding: 4em $margin-right-body 4em $margin-left-body;
-    width: $body-width;
-    align-items: left;
-    justify-content: flex-start;
-  }
 
   h2 {
     font-size: 2rem;
@@ -746,9 +749,9 @@
   }
   .speakers-section {
     padding: 4em $margin-right-body-small 4em $margin-left-body-small;
-    .contributed {
-      width: $body-width-small;
-    }
+  }
+  .contributed {
+    width: $body-width-small;
   }
 
   // ---------- Organisers ----------

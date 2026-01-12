@@ -184,10 +184,118 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     ],
   };
 
+  const contributedTalks = [
+    {
+      name: "Simone Accogli",
+      title: "Modeling and simulation of multi-agent systems with stochastic and target-oriented dynamics",
+      affiliation: "University of Pavia",
+    },
+    {
+      name: "Maria Roberta Belardo",
+      title: "Optimal Convergence in Least-Squares Isogeometric Collocation",
+      affiliation: "Scuola Superiore Meridionale",
+    },
+    {
+      name: "Viola Cusumano",
+      title: "Calibration of a Mathematical Model for Cardiac Perfusion",
+      affiliation: "Centro Cardiologico Monzino",
+    },
+    {
+      name: "Caterina Dalmaso",
+      title: "An integrated 1D-0D model of the cardiorespiratory system with local autoregulation",
+      affiliation: "University of Trento",
+    },
+    {
+      name: "Christian Daniele",
+      title: "Deep Equilibrium models for Poisson Inverse Problems via Mirror Descent",
+      affiliation: "Università di Genova",
+    },
+    {
+      name: "Valeria Fiori",
+      title: "Region-Constrained RBPF for MEG source localisation",
+      affiliation: "Università di Genova",
+    },
+    {
+      name: "Isabella Carla Gonnella",
+      title: "Dynamical Reduced Order Approximation of Wasserstein Gradient Flows",
+      affiliation: "SISSA",
+    },
+    {
+      name: "Hippolyte Labarrière",
+      title: "On the Role of Overparameterization in Optimization Dynamics",
+      affiliation: "Università degli Studi di Genova",
+    },
+    {
+      name: "Caterina Beatrice Leimer Saglio",
+      title: "A p-adaptive high-order polytopal method for modelling neuronal electrophysiology",
+      affiliation: "Politecnico di Milano",
+    },
+    {
+      name: "Marco Desiderio Loffredo Senesi",
+      title: "An entropic lattice boltzmann method for wettability control via coupled boundary-force interpolation",
+      affiliation: "Politecnico di Bari",
+    },
+    {
+      name: "Chiara Lonati",
+      title: "Poroelasticity for intrinsically incompressible constituents",
+      affiliation: "Politecnico di Torino",
+    },
+    {
+      name: "Armando Monforte",
+      title: "TMATDG: applying TDG methods to multiple scattering via T-matrix approximation",
+      affiliation: "University of Pavia",
+    },
+    {
+      name: "Federica Mugnaioni",
+      title: "Preconditioning techniques for fictitious domain formulations of elliptic interface problems",
+      affiliation: "Scuola Normale Superiore",
+    },
+    {
+      name: "Alessandro Palummo",
+      title: "Fast physics-informed spatio-temporal smoothing with time-indexed elliptic operators",
+      affiliation: "Politecnico di Milano",
+    },
+    {
+      name: "Giuseppe Scarlato",
+      title: "A Preconditioned Version of a Nested Primal-Dual Algorithm for Image Deblurring",
+      affiliation: "Università degli Studi dell'Insubria",
+    },
+    {
+      name: "Giacomo Speroni",
+      title: "From multi-physics topology optimization to 3D-printed porous scaffolds for soilless cultivation",
+      affiliation: "Politecnico di Milano",
+    },
+    {
+      name: "Barbara Tarantino",
+      title: "CAuSe–AI: Evaluating the Reasoning of Deep Learning Models",
+      affiliation: "University of Pavia",
+    },
+    {
+      name: "Lorenzo Tomada",
+      title: "Latent Dynamics Graph Convolutional Networks for model order reduction of parameterized time-dependent PDEs",
+      affiliation: "SISSA",
+    },
+    {
+      name: "Matteo Tomasetto",
+      title: "Sparse sensing is all you need: real-time simulation and optimal control of high-dimensional parametric systems",
+      affiliation: "Politecnico di Milano",
+    },
+    {
+      name: "Ilaria Trombini",
+      title: "Stochastic algorithm for the 3D Computed Tomography (CT) problems",
+      affiliation: "University of Ferrara",
+    },
+    {
+      name: "Carmine Valentino",
+      title: "PINNs and ROMs for predictive maintenance of cultural heritage",
+      affiliation: "University of Salerno",
+    },
+  ];
+
   return (
     <>
       <div className={`speakers-section ${mode}`} id="speakers">
-        <h2>Speakers</h2>
+        <h2>Keynote Talks</h2>
         <div className="speakers-grid">
           {speakers.map((s, i) => (
             <div key={i} className="speaker-card">
@@ -218,17 +326,23 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         </div>
       </div>
 
-      {/* <div className="contributed">
+      <div className="contributed">
         <h2>Contributed Talks</h2>
-        <ul>
-          <li><strong>Dr. Alice Smith:</strong> Understanding Langevin Dynamics in ML</li>
+
+        <ul className="contributed-list">
+          {contributedTalks.map((t, i) => (
+            <li key={i} className="contributed-item">
+              <strong>{t.name}</strong>{", "} {t.affiliation}{": "}
+              <em>{t.title}</em>.
+            </li>
+          ))}
         </ul>
 
-        <h2>Poster Session Contributions</h2>
+        {/* <h2>Poster Session Contributions</h2>
         <ul>
           <li><strong>Dr. Alice Smith:</strong> Understanding Langevin Dynamics in ML</li>
-        </ul>
-      </div> */}
+        </ul> */}
+      </div>
 
       {/* ===== Organisers Section ===== */}
       <div className="organisers" id="organisers">

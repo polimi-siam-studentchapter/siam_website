@@ -10,16 +10,6 @@ import Typography from "@mui/material/Typography";
 
 const steps = [
   {
-    label: "Abstract submission form - December 15, 2025",
-    description:
-    (
-      <>
-        Contributed talks are welcome, use the{" "}
-        <a href="https://forms.gle/uD3a9h3PVXUrXu5K8">form here</a> to submit your abstract. Notification of acceptance will be given on December 22, 2025.
-      </>
-    ), 
-  },
-  {
     label: "Poster submission form - January 15, 2026",
     description:
     (
