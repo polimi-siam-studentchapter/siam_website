@@ -750,9 +750,15 @@
   .speakers-section {
     padding: 4em $margin-right-body-small 4em $margin-left-body-small;
   }
+
   .contributed {
+    padding: 4em 3% 4em 3%;
     width: $body-width-small;
+    ul {
+      padding-left: 1.5em;
+    }
   }
+
 
   // ---------- Organisers ----------
   .organisers {
