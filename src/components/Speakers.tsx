@@ -327,7 +327,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       </div>
 
       <div className="contributed">
-        <h2>Contributed Talks</h2>
+        <h2>Contributed and Invited Talks</h2>
 
         <ul className="contributed-list">
           {contributedTalks.map((t, i) => (

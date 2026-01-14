@@ -48,22 +48,22 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Cusumano",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "for Healthcare Applications",
       speaker: "Dalmaso",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Fiori",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Leimer Saglio",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Trombini",
     },
@@ -82,7 +82,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Gonnella",
     },
     {
-      time: "12:30-13:10",
+      time: "",
       programme: "",
       speaker: "Tarantino",
     },
@@ -95,17 +95,17 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Accogli",
     },
     {
-      time: "14:30-15:50",
+      time: "",
       programme: "",
       speaker: "Belardo",
     },
     {
-      time: "14:30-15:50",
+      time: "",
       programme: "",
       speaker: "Lonati",
     },
     {
-      time: "14:30-15:50",
+      time: "",
       programme: "",
       speaker: "Monforte",
     },
@@ -130,22 +130,22 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Daniele",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Palummo",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Tomada",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Tomasetto",
     },
     {
-      time: "9:40-11:20",
+      time: "",
       programme: "",
       speaker: "Valentino",
     },
@@ -164,7 +164,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Labarrière",
     },
     {
-      time: "12:30-13:10",
+      time: "",
       programme: "",
       speaker: "Scarlato",
     },
@@ -177,12 +177,12 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
       speaker: "Loffredo Senesi",
     },
     {
-      time: "14:30-15:30",
+      time: "",
       programme: "",
       speaker: "Mugnaioni",
     },
     {
-      time: "14:30-15:30",
+      time: "",
       programme: "",
       speaker: "Speroni",
     },
