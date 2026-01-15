@@ -78,7 +78,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     {
       time: "12:30-13:10",
-      programme: "Contributed Talks",
+      programme: "Talks",
       speaker: "Gonnella",
     },
     {
@@ -91,7 +91,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     {
       time: "14:30-15:50",
-      programme: "Contributed Talks",
+      programme: "Talks",
       speaker: "Accogli",
     },
     {
@@ -160,7 +160,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     {
       time: "12:30-13:10",
-      programme: "Contributed Talks",
+      programme: "Talks",
       speaker: "Labarrière",
     },
     {
@@ -173,7 +173,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     {
       time: "14:30-15:30",
-      programme: "Contributed Talks",
+      programme: "Talks",
       speaker: "Loffredo Senesi",
     },
     {
@@ -189,7 +189,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     {
       time: "15:30-16:00",
-      programme: "SIAM + Institutional Session",
+      programme: "SIAM Chapters Round Table",
       speaker: "-",
     },
 
@@ -273,14 +273,14 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
         </Accordion>
       </Paper>
 
-      {/* <a
+      <a
         href="./downloadables/programma.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="download-button"
       >
         Download Schedule (PDF)
-      </a> */}
+      </a>
     </div>
   );
 };
