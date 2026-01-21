@@ -112,7 +112,11 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
 
     { time: "16:00-17:00", programme: "Elevator Pitch", speaker: "-" },
 
-    { time: "17:00-18:30", programme: "Poster Session + Aperitif", speaker: "-" },
+    {
+      time: "17:00-18:30",
+      programme: "Poster Session + Aperitif",
+      speaker: "-",
+    },
   ];
 
   const day2: Session[] = [
@@ -202,86 +206,119 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
     { time: "16:40-16:50", programme: "Closing", speaker: "-" },
   ];
 
-
   return (
-    <div className="schedule-section" id="schedule">
-      <h2>Schedule</h2>
-
-      <Paper elevation={0} className={`schedule-card ${mode === "dark" ? "dark" : ""}`}>
-        <Accordion
-          expanded={expanded === "day1"}
-          onChange={handleChange("day1")}
-          sx={{ background: "transparent", boxShadow: "none" }}
+    <>
+      <div className="schedule-section" id="schedule">
+        <h2>Schedule</h2>
+        <Paper
+          elevation={0}
+          className={`schedule-card ${mode === "dark" ? "dark" : ""}`}
         >
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>January 29, 2026 - Thursday</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <TableContainer sx={{ overflowX: 'auto' }}>
-              <Table size="small" aria-label="day 1 schedule" sx={{tableLayout: 'auto', whiteSpace: 'nowrap' }}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell><strong>Time</strong></TableCell>
-                    <TableCell><strong>Programme</strong></TableCell>
-                    <TableCell><strong>Speaker</strong></TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {day1.map((session, i) => (
-                    <TableRow key={i}>
-                      <TableCell>{session.time}</TableCell>
-                      <TableCell>{session.programme}</TableCell>
-                      <TableCell>{session.speaker}</TableCell>
+          <Accordion
+            expanded={expanded === "day1"}
+            onChange={handleChange("day1")}
+            sx={{ background: "transparent", boxShadow: "none" }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>January 29, 2026 - Thursday</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <TableContainer sx={{ overflowX: "auto" }}>
+                <Table
+                  size="small"
+                  aria-label="day 1 schedule"
+                  sx={{ tableLayout: "auto", whiteSpace: "nowrap" }}
+                >
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>
+                        <strong>Time</strong>
+                      </TableCell>
+                      <TableCell>
+                        <strong>Programme</strong>
+                      </TableCell>
+                      <TableCell>
+                        <strong>Speaker</strong>
+                      </TableCell>
                     </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </AccordionDetails>
-        </Accordion>
+                  </TableHead>
+                  <TableBody>
+                    {day1.map((session, i) => (
+                      <TableRow key={i}>
+                        <TableCell>{session.time}</TableCell>
+                        <TableCell>{session.programme}</TableCell>
+                        <TableCell>{session.speaker}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </AccordionDetails>
+          </Accordion>
 
-        <Accordion
-          expanded={expanded === "day2"}
-          onChange={handleChange("day2")}
-          sx={{ background: "transparent", boxShadow: "none" }}
+          <Accordion
+            expanded={expanded === "day2"}
+            onChange={handleChange("day2")}
+            sx={{ background: "transparent", boxShadow: "none" }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>January 30, 2026 - Friday</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <TableContainer sx={{ overflowX: "auto" }}>
+                <Table
+                  size="small"
+                  aria-label="day 2 schedule"
+                  sx={{ tableLayout: "auto", whiteSpace: "nowrap" }}
+                >
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>
+                        <strong>Time</strong>
+                      </TableCell>
+                      <TableCell>
+                        <strong>Programme</strong>
+                      </TableCell>
+                      <TableCell>
+                        <strong>Speaker</strong>
+                      </TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {day2.map((session, i) => (
+                      <TableRow key={i}>
+                        <TableCell>{session.time}</TableCell>
+                        <TableCell>{session.programme}</TableCell>
+                        <TableCell>{session.speaker}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </AccordionDetails>
+          </Accordion>
+        </Paper>
+        <br />
+        <a
+          href="./downloadables/programma.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-button"
         >
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>January 30, 2026 - Friday</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <TableContainer sx={{ overflowX: 'auto' }}>
-              <Table size="small" aria-label="day 2 schedule" sx={{tableLayout: 'auto', whiteSpace: 'nowrap' }}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell><strong>Time</strong></TableCell>
-                    <TableCell><strong>Programme</strong></TableCell>
-                    <TableCell><strong>Speaker</strong></TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {day2.map((session, i) => (
-                    <TableRow key={i}>
-                      <TableCell>{session.time}</TableCell>
-                      <TableCell>{session.programme}</TableCell>
-                      <TableCell>{session.speaker}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </AccordionDetails>
-        </Accordion>
-      </Paper>
-
-      <a
-        href="./downloadables/programma.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="download-button"
-      >
-        Download Schedule (PDF)
-      </a>
-    </div>
+          Download Schedule (PDF).
+        </a>
+        <br />
+        <br />
+        <a
+          href="./downloadables/bookOfAbstract.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-button"
+        >
+          Download Book of Abstract (PDF).
+        </a>
+      </div>
+    </>
   );
 };
 
