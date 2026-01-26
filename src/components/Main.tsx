@@ -272,6 +272,16 @@ function Main({ mode }: MainProps) {
           <li><a href="https://hotelgammamilano.it/it">Hotel Gamma</a> ***</li>
           <li><a href="https://www.hotel-sanfrancisco.it/">Hotel San Francisco</a> ***</li>
         </ul>
+        <div>
+        <a
+          href="./downloadables/VisitorGuide.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="breakfast-button"
+        >
+          Breakfast and Lunch Suggestions.
+        </a>
+        </div>
         <p>
           If you have any question, don't hesitate to contact us at{" "}
           <a href="mailto:siam-studentchapter-dmat@polimi.it" target="_blank" rel="noopener noreferrer">
@@ -281,9 +291,9 @@ function Main({ mode }: MainProps) {
       </div>
 
       {/* Registration */}
-      <div id="registration">
+      {/* <div id="registration">
         <RegistrationSection/>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -370,7 +370,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       affiliation: "ENS Lyon",
     },
     {
-      name: "Dario Coscia",
+      name: "Dario Coscia, Giovanni Canali",
       title: "PINA: A Unified Framework for Scientific Machine Learning",
       affiliation: "SISSA",
     },
@@ -400,12 +400,6 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       title:
         "Time-continuous latent dynamics learning for nonlinear reduced order modeling",
       affiliation: "MOX, Dipartimento di Matematica - Politecnico di Milano",
-    },
-    {
-      name: "Alek Fröhlich",
-      title:
-        "Toward Scalable and Valid Conditional Independence Testing with Spectral Features",
-      affiliation: "Italian Institute of Technology",
     },
     {
       name: "Sara Gazzoni",
@@ -460,7 +454,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       affiliation: "Italian Institute of Technology",
     },
     {
-      name: "Andrea Munno",
+      name: "Andrea Munno, Jacopo Senoner",
       title:
         "Novel formulations and linearization strategies for the numerical modelling of non-Newtonian incompressible flows",
       affiliation: "Politecnico di Milano",
