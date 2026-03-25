@@ -456,7 +456,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     {
       name: "Andrea Munno, Jacopo Senoner",
       title:
-        "Novel formulations and linearization strategies for the numerical modelling of non-Newtonian incompressible flows",
+        "Robust FEM and Linearization Strategies for Non-Newtonian Fluids",
       affiliation: "Politecnico di Milano",
     },
     {
